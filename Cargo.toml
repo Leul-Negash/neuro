@@ -1,0 +1,19 @@
+[package]
+name = "neuro"
+version = "0.1.0"
+edition = "2024"
+description = "A neural network built from scratch in pure Rust — no external crates."
+
+[lib]
+name = "neuro"
+path = "src/lib.rs"
+
+[[bin]]
+name = "smoke-test"
+path = "src/main.rs"
+
+# No dependencies by design.
+[dependencies]
+
+[profile.release]
+opt-level = 3
